@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+faces/
+*.DS_Store
+face_model.yml
