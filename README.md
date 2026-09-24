@@ -1,24 +1,22 @@
 # Mac Face Authentication
 
-A local webcam-based facial authentication prototype built with Python and OpenCV.
+A local facial authentication prototype built with Python and OpenCV.
+
+## Project Overview
+
+This project demonstrates how facial recognition and liveness verification can be combined to create a local authentication system.
+
+The application uses the Mac's camera to detect and recognize a registered face and performs a basic liveness check before granting access.
 
 ## Features
 
-- Real-time face detection using OpenCV
-- Local facial recognition using an LBPH model
-- Automatic face verification
-- Multiple matching frames required before access is granted
-- Tkinter graphical interface
-- Local processing — facial verification is performed on the computer
-- Liveness verification prototype
-
-## How It Works
-
-1. The webcam captures video.
-2. OpenCV detects a face.
-3. The trained LBPH model compares the detected face with the enrolled face.
-4. Multiple matching frames are required.
-5. If the face meets the recognition threshold, access is granted.
+- Face detection using OpenCV
+- Facial recognition using LBPH
+- Face enrollment with camera samples
+- Basic liveness verification
+- Graphical authentication interface
+- Local authentication without a cloud service
+- Git/GitHub version control
 
 ## Technologies
 
@@ -26,21 +24,24 @@ A local webcam-based facial authentication prototype built with Python and OpenC
 - OpenCV
 - OpenCV Contrib
 - Tkinter
-- LBPH Face Recognition
-- macOS
-- Git/GitHub
+- Git
+- GitHub
 
 ## Project Structure
 
 ```text
 MacFaceUnlock/
+├── app.py
 ├── app_v2.py
-├── face_unlock_v2.py
-├── face_model.yml
-├── enroll.py
-├── train.py
-├── face_detect.py
+├── app_working_backup.py
 ├── camera_test.py
+├── enroll.py
+├── face_detect.py
+├── face_unlock.py
+├── face_unlock_v2.py
+├── face_unlock_working_backup.py
 ├── liveness.py
-├── .gitignore
-└── README.md
+├── recognize.py
+├── train.py
+├── README.md
+└── .gitignore
